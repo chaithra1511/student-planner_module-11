@@ -1,0 +1,115 @@
+/* Reset styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Set a single background image */
+/* body {
+    background: url('https://cdn.pixabay.com/photo/2024/03/28/09/02/office-8660547_1280.png') no-repeat center center fixed;
+    background-size: 100%;
+} */
+
+.home-page {
+    background: url('https://pplx-res.cloudinary.com/image/upload/v1739401752/user_uploads/eKIgYUVWObouhlz/Screenshot-2025-02-12-at-6.09.09-PM.jpg') 
+        no-repeat center center fixed;
+    background-size: cover; /* Ensures the image fully covers the screen */
+    min-height: 100vw;
+    width: 200vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Home Page Layout */
+
+/* Ensure logo image is properly displayed */
+.logo-image {
+    height: 50px; /* Adjust the height as needed */
+    width: auto; /* Maintain aspect ratio */
+}
+
+/* Full-width Header */
+.header {
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: rgba(78, 30, 8, 0.7); /* Dark transparent background */
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+/* Logo */
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+/* Navigation */
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navigation a, .navigation button {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    background: none;
+    border: 1px solid white;
+}
+
+.navigation .login-button,
+.navigation .register-button {
+    background-color: #4CAF50;
+    border: none;
+}
+
+.navigation .login-button:hover,
+.navigation .register-button:hover,
+.navigation a:hover {
+    background-color: rgba(232, 13, 13, 0.3);
+}
+
+/* Main Content */
+.main-content {
+    margin-top: 100px; /* Adjust to prevent overlap with fixed header */
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+/* Background Image Block */
+
+/* Note Cards */
+.notes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.note-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px 20px;
+    border-radius: 8px;
+    color: #611f1f;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

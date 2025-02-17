@@ -1,0 +1,58 @@
+/* General styling for the resources page */
+.resources-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .resources-container h2 {
+    text-align: center;
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for each resource category */
+  .resource-category {
+    background: #ffffff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-left: 6px solid #4CAF50; /* Green highlight */
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .resource-category:hover {
+    /* transform: translateY(-2px); */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .resource-category h3 {
+    color: #2c3e50;
+    font-size: 20px;
+  }
+  
+  .resource-category ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .resource-category li {
+    margin: 8px 0;
+  }
+  
+  .resource-category a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #1e88e5;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .resource-category a:hover {
+    color: #1565c0;
+    text-decoration: underline;
+  }
+  

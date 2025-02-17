@@ -1,0 +1,28 @@
+.notes-container {
+    padding: 20px;
+    text-align: center;
+}
+
+textarea {
+    width: 80%;
+    height: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: rgb(9, 9, 9);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

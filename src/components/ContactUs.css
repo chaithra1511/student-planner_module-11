@@ -1,0 +1,55 @@
+.contact-container {
+  text-align: center;
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+textarea {
+  width: 80%;
+  height: 100px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #100d0d;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: rgb(12, 11, 11);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* Pop-up Message */
+.popup {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #28a745;
+  color: rgb(8, 8, 8);
+  font-weight: bold;
+  border-radius: 5px;
+  display: inline-block;
+  animation: fadeOut 3s forwards;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}

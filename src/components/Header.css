@@ -1,0 +1,43 @@
+.header {
+    background-color: #D19683;
+    /* Replace with color in Image */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    /* Sit on top */
+}
+
+.header_logo {
+    color: #333;
+    text-decoration: none;
+}
+
+.header_nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.header_link {
+    color: #231F20;
+    text-decoration: none;
+}
+
+.header_option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header_optionLineOne {
+    font-size: 0.9em;
+}
+
+.header_optionLineTwo {
+    font-size: 1.1em;
+    font-weight: bold;
+}
