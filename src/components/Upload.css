@@ -1,37 +1,141 @@
+/* General Page Styling */
 .upload-page {
-    padding: 20px;
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  label {
-    display: block;
-    font-weight: bold;
-  }
-  
-  input[type='file'] {
-    margin-top: 10px;
-  }
-  
-  button.btn-primary {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-  }
-  
-  button.btn-primary:hover {
-    background-color: #0056b3;
-  }
-  
-  .uploaded-files h2 {
-    margin-top: 30px;
-  }
-  
-  .uploaded-files ul {
-    list-style-type: none;
-  }
-  
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+/* Form Styling */
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+select, input[type='file'] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Button Styling */
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 10px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* File List Styling */
+.selected-files ul, .uploaded-files ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.selected-files li, .uploaded-files li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f9fa;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.selected-files a, .uploaded-files a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.selected-files a:hover, .uploaded-files a:hover {
+  text-decoration: underline;
+}
+
+/* Action Buttons */
+.preview-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.preview-btn:hover {
+  background-color: #218838;
+}
+
+.edit-btn {
+  background-color: #ffc107;
+  color: black;
+}
+
+.edit-btn:hover {
+  background-color: #e0a800;
+}
+
+.remove-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.remove-btn:hover {
+  background-color: #c82333;
+}
+.upload-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.info-icon {
+  cursor: pointer;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  width: 250px;
+  top: -40px;
+  left: 20px;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.info-icon:hover .tooltip {
+  opacity: 1;
+}
+.progress-bar {
+  background-color: #f3f3f3;
+
+}
+

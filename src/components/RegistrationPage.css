@@ -90,3 +90,31 @@
 .registration-container button:hover {
   background: #218838;
 }
+.password-requirements ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.password-requirements li {
+  font-size: small;
+}
+
+.password-requirements li.fulfilled {
+  color: green; /* Highlight fulfilled requirements */
+}
+
+.password-requirements li:not(.fulfilled) {
+  color: red; /* Unfulfilled requirements */
+}
+
+.password-strength.weak {
+  color: red;
+}
+
+.password-strength.moderate {
+  color: orange;
+}
+
+.password-strength.strong {
+  color: green;
+}

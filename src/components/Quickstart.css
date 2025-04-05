@@ -1,0 +1,107 @@
+/* Quick Start Button */
+.quickstart-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .quickstart-btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Quick Start Overlay */
+  .quickstart-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  /* Quick Start Box */
+  .quickstart-box {
+    background: white;
+    padding: 20px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    position: relative;
+  }
+  
+  /* Title & Description */
+  .quickstart-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .quickstart-desc {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  /* Close Button */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .close-btn:hover {
+    color: red;
+  }
+  
+  /* Quick Start List Styling */
+  .quickstart-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .quickstart-list li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333 !important;
+  }
+  
+  /* Checkmark Styling */
+  .checkmark {
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+  
+  /* Quick Start Text */
+  .quickstart-text {
+    color: #000 !important;
+    font-weight: 500;
+    flex-grow: 1;
+    word-break: break-word;
+    white-space: normal;
+  }
+  
+  /* Footer */
+  .quickstart-footer {
+    font-size: 14px;
+    color: #444;
+    margin-top: 10px;
+  }
+  
