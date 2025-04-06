@@ -2,7 +2,6 @@
   "name": "sp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://chaithra1511.github.io/632-proj-1",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
