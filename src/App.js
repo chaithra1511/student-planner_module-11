@@ -1,4 +1,5 @@
-import React from 'react';
+// App.js
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import Homej from './components/Homej';
 import LoginPage from './components/LoginPage';
@@ -13,22 +14,41 @@ import ResourcesPage from './components/ResourcesPage';
 import './App.css';
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    document.body.className = darkMode ? 'dark-mode' : '';
+  }, [darkMode]);
+
   return (
     <Router>
-      <MainLayout />
+      <MainLayout darkMode={darkMode} setDarkMode={setDarkMode} />
     </Router>
   );
 }
 
-function MainLayout() {
-  const location = useLocation(); // Get the current route
+function MainLayout({ darkMode, setDarkMode }) {
+  const location = useLocation();
 
   return (
-    <div className="App">
-      {/* Sidebar should be hidden only on these pages */}
-      {!["/login", "/register", "/contact", "/resources", "/"].includes(location.pathname) && <Sidebar />}
+    <div className={`App ${darkMode ? 'dark-mode' : ''}`}>
+      {!["/login", "/register", "/contact", "/resources", "/"].includes(location.pathname) && (
+        <>
+          <Sidebar />
+          {/* 🔘 Dark Mode Toggle */}
+          <div className="dark-toggle">
+            <label>
+              <input
+                type="checkbox"
+                checked={darkMode}
+                onChange={() => setDarkMode(!darkMode)}
+              />
+              Dark Mode
+            </label>
+          </div>
+        </>
+      )}
 
-      
       <div className="content">
         <Routes>
           <Route path="/" element={<Homej />} />
@@ -39,10 +59,6 @@ function MainLayout() {
           <Route path="/register" element={<RegistrationPage />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/resources" element={<ResourcesPage />} />
-          
-        
-    
-    
         </Routes>
       </div>
     </div>
@@ -50,5 +66,6 @@ function MainLayout() {
 }
 
 export default App;
+
 
 

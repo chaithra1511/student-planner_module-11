@@ -161,3 +161,180 @@
 .undo-button {
   text-decoration: none !important;
 }
+/* ================= LIGHT MODE FIXES ================= */
+body:not(.dark-mode) .add-task,
+body:not(.dark-mode) .add-course,
+body:not(.dark-mode) .assignment-table,
+body:not(.dark-mode) .courses-table,
+body:not(.dark-mode) .calendar-section,
+body:not(.dark-mode) .deadline-widget {
+    background-color: #ffffff;
+    color: #1a1a1a;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* ✨ Slightly deeper shadow */
+}
+
+/* Light Mode Table Headers */
+body:not(.dark-mode) table th {
+    background-color: #f5f5f5;
+    color: #333;
+    font-weight: 600;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Light Mode Table Cells */
+body:not(.dark-mode) table td {
+    background-color: #fafafa;
+    color: #222;
+    border-top: 1px solid #eee;
+}
+
+/* Light Calendar Fix */
+body:not(.dark-mode) .react-calendar {
+    background-color: #fff;
+    color: #222;
+    box-shadow: 0 0 12px rgba(0,0,0,0.08);
+    border-radius: 12px;
+    padding: 10px;
+}
+
+/* Calendar Text Contrast */
+body:not(.dark-mode) .react-calendar__tile {
+    color: #333 !important;
+}
+
+/* Optional: Increase spacing in sections for better alignment */
+body:not(.dark-mode) .calendar-section,
+body:not(.dark-mode) .deadline-widget {
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+}
+
+/* Center headings consistently */
+.section-title, h2, h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    margin-top: 20px;
+    color: #222;
+}
+/* DARK MODE BASE */
+body.dark-mode {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+/* Dark Mode for Panels */
+body.dark-mode .add-task,
+body.dark-mode .add-course,
+body.dark-mode .assignment-table,
+body.dark-mode .courses-table,
+body.dark-mode .calendar-section,
+body.dark-mode .deadline-widget {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+  border: 1px solid #444;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px auto;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+}
+
+/* Table Headers in Dark Mode */
+body.dark-mode table th {
+  background-color: #2a2a2a;
+  color: #fff;
+  font-weight: 600;
+  border-bottom: 1px solid #555;
+}
+
+/* Table Cells in Dark Mode */
+body.dark-mode table td {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+  border-top: 1px solid #333;
+}
+
+/* Dark Calendar Fix */
+body.dark-mode .react-calendar {
+  background-color: #2b2b2b;
+  color: #fff;
+  box-shadow: 0 0 12px rgba(255,255,255,0.08);
+  border-radius: 12px;
+  padding: 10px;
+}
+
+body.dark-mode .react-calendar__tile {
+  background: none;
+  color: #fff !important;
+}
+
+body.dark-mode .react-calendar__tile--active {
+  background-color: #28a745 !important;
+  color: #000 !important;
+}
+
+/* Title and Section Headings */
+body.dark-mode .section-title, 
+body.dark-mode h2, 
+body.dark-mode h3, 
+body.dark-mode .sidebar h2 {
+  color: #ffffff;
+}
+.term-label {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 0.85rem;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Light/dark mode-safe colors */
+.fall {
+  background-color: #ff6f61;
+  color: white;
+}
+
+.spring {
+  background-color: #a3d9a5;
+  color: #1a1a1a;
+}
+
+.summer {
+  background-color: #fce38a;
+  color: #1a1a1a;
+}
+/* Today highlight (e.g., 7) */
+body.dark-mode .react-calendar__tile--now {
+  background: #ffc107 !important; /* Highlight today */
+  color: black !important;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+/* Due dates (like red days for deadlines) */
+body.dark-mode .react-calendar__tile.due-date {
+  background-color: #dc3545 !important;
+  color: white !important;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+/* Light mode fallback (if needed) */
+body:not(.dark-mode) .react-calendar__tile--now {
+  background: #ffc107 !important;
+  color: black !important;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+body:not(.dark-mode) .react-calendar__tile.due-date {
+  background-color: #dc3545 !important;
+  color: white !important;
+  font-weight: bold;
+  border-radius: 6px;
+}
